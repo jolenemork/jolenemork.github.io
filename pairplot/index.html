@@ -71,7 +71,7 @@ var yAxis = d3.svg.axis()
 
 var color = d3.scale.category10();
 
-d3.csv("flowers.csv", function(error, data) {
+d3.csv("https://github.com/jolenemork/jolenemork.github.io/blob/master/z_website_data.csv", function(error, data) {
   if (error) throw error;
 
   var domainByTrait = {},
