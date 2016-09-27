@@ -1,54 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-svg {
-  font: 10px sans-serif;
-  padding: 10px;
-}
-
-.axis,
-.frame {
-  shape-rendering: crispEdges;
-}
-
-.axis line {
-  stroke: #ddd;
-}
-
-.axis path {
-  display: none;
-}
-
-.cell text {
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.frame {
-  fill: none;
-  stroke: #aaa;
-}
-
-circle {
-  fill-opacity: .7;
-}
-
-circle.hidden {
-  fill: #ccc !important;
-}
-
-.extent {
-  fill: #000;
-  fill-opacity: .125;
-  stroke: #fff;
-}
-
-</style>
-<body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script>
-
 var width = 960,
     size = 230,
     padding = 20;
@@ -71,7 +20,7 @@ var yAxis = d3.svg.axis()
 
 var color = d3.scale.category10();
 
-d3.csv("https://github.com/jolenemork/jolenemork.github.io/blob/master/z_website_data.csv", function(error, data) {
+d3.csv("./data/z_website_data_partial_dataset.csv", function(error, data) {
   if (error) throw error;
 
   var domainByTrait = {},
@@ -182,5 +131,3 @@ function cross(a, b) {
   for (i = -1; ++i < n;) for (j = -1; ++j < m;) c.push({x: a[i], i: i, y: b[j], j: j});
   return c;
 }
-
-</script>
