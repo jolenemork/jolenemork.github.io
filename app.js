@@ -1,3 +1,9 @@
+function colores_2(n) {
+  var colores_g = ["#3366cc", "#dc3912"];
+  return colores_g[n % colores_g.length];
+}
+
+
 var width = 960,
     size = 230,
     padding = 20;
@@ -96,7 +102,7 @@ d3.csv("./data/z_website_data_partial_dataset.csv", function(error, data) {
         .attr("cx", function(d) { return x(d[p.x]); })
         .attr("cy", function(d) { return y(d[p.y]); })
         .attr("r", 4)
-        .style("fill", function(d) { return color(d.species); });
+        .style("fill", function(d) { return colores_2(d.species); });
   }
 
   var brushCell;
