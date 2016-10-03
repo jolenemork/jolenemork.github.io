@@ -1,4 +1,4 @@
-initial_days_late,time_between_applications,fraction_paid_per_installment,ratio_between_loans,species
+index, initial_days_late,time_between_applications,fraction_paid_per_installment,ratio_between_loans,species
 0,0.0,87.0,0.0897435897436,1.87179487179,0
 1,2.0,-338.0,0.0220879120879,1.0989010989,1
 2,0.0,125.0,0.07,1.98,1
