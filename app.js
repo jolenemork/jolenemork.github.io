@@ -1,9 +1,3 @@
-function colores_2(n) {
-  var colores_g = ["#3366cc", "#dc3912"];
-  return colores_g[n % colores_g.length];
-}
-
-
 var width = 960,
     size = 230,
     padding = 20;
